@@ -8,20 +8,30 @@ $(function () {
 					{
 						title: 'Name',
 						data: (data) => {
-							return `<div class="d-grid"><button class="btn btn-sm btn-outline-primary" onclick="nameClicked(this);" data-phrase="${data.search}">${data.name}</button></div>`;
+							return `<div class="d-grid"><button class="btn btn-sm btn-outline-primary fs-1" onclick="nameClicked(this);" data-phrase="${data.search}">${data.name}</button></div>`;
 						}
 					},
-					{ title: 'Search Phrase', data: 'search' },
-					{ title: 'Type', data: 'type' },
+					{
+						title: 'Search Phrase',
+						className: 'text-break',
+						data: 'search',
+					},
+					{
+						title: 'Type',
+						data: 'type',
+					},
 				],
 				destroy: true,
-				pageLength: 50,
+				lengthChange: false,
+				pageLength: 10,
 				stateSave: false,
 				autoWidth: true,
 				searching: true,
 				processing: true,
 				responsive: true,
 				deferRender: true,
+				info: false,
+				paging: false,
 			});
 		});
 });
