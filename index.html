@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="developer" content="sheppy9">
+		<title>Pokemon Go Raid Search Helper</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/v/bs5/dt-2.1.8/datatables.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<table id="pokemon-search-table" class="table table-sm table-striped table-bordered">
+				<thead></thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<!-- Toast to show text copied -->
+		<div class="toast-container position-fixed bottom-0 end-0 p-3">
+			<div id="toast" class="toast text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Copied to clipboard</strong>
+					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+				</div>
+				<div class="toast-body">
+					<strong class="me-auto" id="toast-text"></strong>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.datatables.net/v/bs5/dt-2.1.8/datatables.min.js"></script>
+
+		<script src="assets/main.js"></script>
+	</body>
+
+</html>
