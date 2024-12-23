@@ -24,7 +24,7 @@ $(function () {
 				destroy: true,
 				lengthChange: true,
 				pageLength: 10,
-				stateSave: false,
+				stateSave: true,
 				autoWidth: true,
 				searching: true,
 				processing: true,
