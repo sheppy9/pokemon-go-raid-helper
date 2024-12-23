@@ -22,7 +22,7 @@ $(function () {
 					},
 				],
 				destroy: true,
-				lengthChange: false,
+				lengthChange: true,
 				pageLength: 10,
 				stateSave: false,
 				autoWidth: true,
@@ -30,8 +30,8 @@ $(function () {
 				processing: true,
 				responsive: true,
 				deferRender: true,
-				info: false,
-				paging: false,
+				info: true,
+				paging: true,
 			});
 		});
 });
